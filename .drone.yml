@@ -13,4 +13,8 @@ steps:
   - go vet ./...
   - go test ./...
 
-...
+trigger:
+  branch:
+    - master
+  event:
+    - push
